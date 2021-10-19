@@ -43,6 +43,10 @@ html {
   color: white;
 }
 
+.landing h1 {
+  font-weight: lighter;
+}
+
 .landing h1:nth-of-type(2) {
   margin-bottom: 5rem;
 }

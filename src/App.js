@@ -4,8 +4,7 @@ import Landing from './Components/LandingMain.js';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
           <Route path = "/"> 
             <Landing/>
           </Route>
-          
+
         </Switch>
       </div>
     </Router>
