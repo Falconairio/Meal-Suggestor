@@ -1,6 +1,6 @@
 let foodsList = [
     {
-        name: "Double Bean Roasted Pepper Chilli",
+        name: "Double bean roasted pepper chilli",
         link: "https://www.bbcgoodfood.com/recipes/double-bean-roasted-pepper-chilli",
     }, {
         name: "Cheesy ham & broccoli pasta",
