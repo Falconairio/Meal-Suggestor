@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import "./variables";
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Abril Fatface', cursive;
+}
+html {
+    background-color: black;
+}
+
+@import './header';
+@import './landing';

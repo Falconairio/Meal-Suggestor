@@ -1,0 +1,29 @@
+.landing {
+    @include width-display;
+    flex-direction: column;
+    height: 50rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    h1:nth-of-type(2) {
+        margin-bottom: 5rem;
+    }
+
+    button {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        border-radius: 0.5rem;
+        border: 0.2rem solid white;
+        font-family: inherit;
+        width: 15rem;
+        font-size: 2.5vh;
+        padding: 4px 4px;
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+    }
+}
