@@ -1,8 +1,14 @@
 $max-width: 900px;
+$non-header-height: 50rem;
 
 @mixin width-display {
     width: inherit;
     display: inherit;
+}
+
+@mixin flex-center {
+    justify-content: center;
+    align-items: center;
 }
 
 @mixin mobile {

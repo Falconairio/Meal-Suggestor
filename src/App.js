@@ -1,6 +1,7 @@
 import './Styles/App.css';
 import Header from './Components/Header.js';
 import Landing from './Components/LandingMain.js';
+import Meal from './Components/Meal';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,7 +16,7 @@ function App() {
         <Switch>
 
           <Route path = "/meal">
-
+            <Meal/>
           </Route>
 
           <Route path = "/"> 

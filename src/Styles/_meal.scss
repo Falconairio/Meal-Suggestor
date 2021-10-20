@@ -1,0 +1,39 @@
+.meal {
+    &-main {
+        @include width-display;
+        @include flex-center;
+        height: $non-header-height;
+    }
+
+    &-items {
+        display: inherit;
+        flex-direction: row;
+        height: 20rem;
+        width: 70rem;
+        justify-content: space-evenly;
+    }
+
+    &-image {
+        border: 0.3rem solid white;
+        border-radius: 1rem;
+    }
+
+    &-title-buttons {
+        height: inherit;
+        display: inherit;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 20rem;
+        text-align: center;
+    }
+
+    &-title {
+        color: white;
+    }
+
+    &-buttons {
+        margin-top: -2rem;
+        display: inherit;
+        justify-content: space-evenly;
+    }
+}

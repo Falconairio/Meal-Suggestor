@@ -1,9 +1,8 @@
 .landing {
     @include width-display;
+    @include flex-center;
     flex-direction: column;
-    height: 50rem;
-    justify-content: center;
-    align-items: center;
+    height: $non-header-height;
     color: white;
 
     h1 {
@@ -15,19 +14,6 @@
     }
 
     button {
-        cursor: pointer;
-        background-color: white;
-        color: black;
-        border-radius: 0.5rem;
-        border: 0.2rem solid white;
-        font-family: inherit;
         width: 15rem;
-        font-size: 2.5vh;
-        padding: 4px 4px;
-
-        &:hover {
-            background-color: black;
-            color: white;
-        }
     }
 }
