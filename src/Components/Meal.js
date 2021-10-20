@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import foodsList from '../Data/foods';
+import foodsJson from "../Data/myfoods.json";
 
 
 export default class Meal extends Component {
@@ -10,11 +9,9 @@ export default class Meal extends Component {
     }
 
     rerollMeal = () => {
-        let num = Math.floor(Math.random() * foodsList.length);
+        let num = Math.floor(Math.random() * foodsJson.length);
         this.setState({
-            meal: foodsList[num]
-        }, () => {
-            console.log(this.state.meal);
+            meal: foodsJson[num]
         })
     }
 
