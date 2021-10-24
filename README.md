@@ -1,2 +1,2 @@
 # Meal Suggestor
-A fun little project I started out of frustration that I couldn't think of anything to make for dinner. This also helps me retain knowledge of React after cramming my head with Java knowledge for university.
+A fun little project I started out of frustration that I couldn't think of anything to make for dinner. This also helps me retain knowledge of React after cramming my head with Java knowledge for university. Hosted at https://meal-suggestor.herokuapp.com/.
