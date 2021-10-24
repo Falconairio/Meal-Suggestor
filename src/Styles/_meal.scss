@@ -16,6 +16,9 @@
     &-image {
         border: 0.3rem solid white;
         border-radius: 1rem;
+        width: 20rem;
+        height: 20rem;
+        object-fit: cover;
     }
 
     &-title-buttons {
@@ -29,6 +32,8 @@
 
     &-title {
         color: white;
+        height: 7rem;
+        text-align: center;
     }
 
     &-buttons {

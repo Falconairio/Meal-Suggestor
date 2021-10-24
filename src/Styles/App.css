@@ -91,6 +91,9 @@ button:hover {
 .meal-image {
   border: 0.3rem solid white;
   border-radius: 1rem;
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
 }
 
 .meal-title-buttons {
@@ -104,6 +107,8 @@ button:hover {
 
 .meal-title {
   color: white;
+  height: 7rem;
+  text-align: center;
 }
 
 .meal-buttons {
