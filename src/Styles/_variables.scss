@@ -1,4 +1,6 @@
-$max-width: 900px;
+$max-width-mobile: 480px;
+$max-width-tablet: 768px;
+$max-width-laptop: 1024px;
 $non-header-height: 50rem;
 
 @mixin width-display {
@@ -11,14 +13,18 @@ $non-header-height: 50rem;
     align-items: center;
 }
 
-@mixin mobile {
-    @media (max-width: $max-width) {
-        @content
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
     }
-};
-
-@mixin desktop {
-    @media (min-width: $max-width) {
-        @content
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
     }
 }
+

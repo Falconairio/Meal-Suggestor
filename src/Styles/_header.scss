@@ -1,5 +1,8 @@
 .header {
     &-main {
+        @include respond(phone) {
+            height: 0
+        }
         @include width-display;
         height: 10vh;
         background-color: #fff;

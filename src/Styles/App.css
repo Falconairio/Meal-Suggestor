@@ -9,6 +9,25 @@
 
 html {
   background-color: black;
+  font-size: 100%;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 button {
@@ -36,6 +55,12 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header-main {
+    height: 0;
+  }
 }
 
 .header-title {
@@ -80,12 +105,27 @@ button:hover {
   height: 50rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .meal-main {
+    height: 100%;
+    display: flex;
+  }
+}
+
 .meal-items {
   display: inherit;
   flex-direction: row;
   height: 20rem;
   width: 70rem;
   justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .meal-items {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .meal-image {
@@ -96,6 +136,13 @@ button:hover {
   object-fit: cover;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .meal-image {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+
 .meal-title-buttons {
   height: inherit;
   display: inherit;
@@ -103,6 +150,12 @@ button:hover {
   justify-content: space-evenly;
   width: 20rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .meal-title-buttons {
+    width: 100%;
+  }
 }
 
 .meal-title {
@@ -115,5 +168,11 @@ button:hover {
   margin-top: -2rem;
   display: inherit;
   justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .meal-buttons {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=App.css.map */

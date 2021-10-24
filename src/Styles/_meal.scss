@@ -1,11 +1,19 @@
 .meal {
     &-main {
+        @include respond(phone) {
+            height: 100%;
+            display: flex;
+        }
         @include width-display;
         @include flex-center;
         height: $non-header-height;
     }
 
     &-items {
+        @include respond(phone) {
+            @include flex-center;
+            flex-direction: column;
+        }
         display: inherit;
         flex-direction: row;
         height: 20rem;
@@ -14,6 +22,10 @@
     }
 
     &-image {
+        @include respond(phone) {
+            width: 25rem;
+            height: 25rem;
+        }
         border: 0.3rem solid white;
         border-radius: 1rem;
         width: 20rem;
@@ -22,6 +34,9 @@
     }
 
     &-title-buttons {
+        @include respond(phone) {
+            width: 100%;
+        }
         height: inherit;
         display: inherit;
         flex-direction: column;
@@ -37,6 +52,9 @@
     }
 
     &-buttons {
+        @include respond(phone) {
+            width: 100%;
+        }
         margin-top: -2rem;
         display: inherit;
         justify-content: space-evenly;
